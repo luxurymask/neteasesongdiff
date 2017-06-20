@@ -59,8 +59,14 @@ public class ResolveSongList {
 	public static void main(String[] args) {
 		List<String> listOfNetease = getListOnNetease();
 		List<String> listOfPhone = getListOnPhone();
-		for(String s : listOfPhone){
-			if(!listOfNetease.contains(s)){
+//		for(String s : listOfPhone){
+//			if(!listOfNetease.contains(s)){
+//				System.out.println(s);
+//			}
+//		}
+		
+		for(String s : listOfNetease){
+			if(!listOfPhone.contains(s)){
 				System.out.println(s);
 			}
 		}
